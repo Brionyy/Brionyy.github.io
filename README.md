@@ -7,7 +7,9 @@
 | 파일 | 역할 |
 |---|---|
 | `index.html` | 사이트 본문. 내용을 고칠 때는 이 파일만 수정하면 됩니다. |
-| `assets/favicon.svg` | 브라우저 탭 아이콘 (DL 모노그램) |
+| `assets/*.svg` | 표지·학력·경력·논문 일러스트와 탭 아이콘. 글자까지 도형으로 바꿔 둔 그림이라 글꼴 없이도 똑같이 보입니다. |
+| `assets/og.png` | 카카오톡·메신저에 링크를 보낼 때 뜨는 미리보기 그림 |
+| `assets/apple-touch-icon.png` | 아이폰 홈 화면에 추가했을 때 쓰는 아이콘 |
 | `.nojekyll` | GitHub Pages가 파일을 변환하지 않고 그대로 올리게 하는 빈 파일. 지우지 마세요. |
 | `README.md` | 이 안내서. 사이트에는 보이지 않습니다. |
 
@@ -50,16 +52,7 @@ QR 생성 사이트 중에는 중간에 자기 주소를 거치게 하거나(동
 2. 고친 뒤 **Commit changes**를 누르면 몇 분 안에 사이트에 반영됩니다.
 3. 맨 아래 `Last updated October 2026`도 함께 고쳐 주세요.
 
-새 논문이나 경력을 추가할 때는 같은 구역의 `<li class="entry"> ... </li>` 한 덩어리를 복사해서 바로 위에 붙이고 내용만 바꾸면 됩니다. Claude에게 수정한 `index.html`을 받아서 다시 업로드해도 됩니다.
-
-## 5. 사진 넣기 (선택)
-
-1. 세로 4:5 비율 사진을 `portrait.jpg`라는 이름으로 `assets` 폴더에 올립니다.
-2. `index.html`에서 `<div class="mono" aria-hidden="true"><div>DL</div></div>`를 찾아 아래처럼 바꿉니다.
-
-```html
-<div class="mono"><div><img src="assets/portrait.jpg" alt="Dongui Lee"></div></div>
-```
+새 경력이나 논문을 추가할 때는 같은 구역의 `<article class="frame card"> ... </article>`(학력은 `<li class="frame"> ... </li>`) 한 덩어리를 복사해서 바로 위에 붙이고 내용만 바꾸면 됩니다. 일러스트가 없는 항목이면 `<div class="pic">...</div>` 줄을 지우세요. Claude에게 수정한 `index.html`을 받아서 다시 업로드해도 됩니다.
 
 ## 참고
 
