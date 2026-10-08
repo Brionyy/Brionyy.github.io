@@ -181,8 +181,17 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-heig
 .certs li:first-child { border-top: 0; }
 .certs .date { white-space: nowrap; }
 
-footer { margin-top: 64px; padding-block: 20px calc(28px + env(safe-area-inset-bottom, 0px)); border-top: 2px solid var(--ink);
-  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 20px; color: var(--mute); }
+footer { margin-top: 64px; padding-block: 24px calc(28px + env(safe-area-inset-bottom, 0px)); border-top: 2px solid var(--ink); }
+.affils { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.affils img { height: 46px; width: auto; }
+.foot-row { margin-top: 18px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 20px; color: var(--mute); }
+
+/* official marks: kept in their own colours on white, or the white version on dark (SNU UI rules) */
+.affil { margin-top: 18px; }
+.affil img { height: 38px; width: auto; }
+.seal { float: right; width: 52px; height: 52px; margin: 0 0 6px 12px; border-radius: 12px; background: #FFFFFF;
+  border: 1.5px solid var(--line); display: grid; place-items: center; }
+.seal img { width: 40px; height: 40px; object-fit: contain; }
 
 /* ---------- larger screens ---------- */
 @media (min-width: 720px) {
@@ -202,6 +211,9 @@ footer { margin-top: 64px; padding-block: 20px calc(28px + env(safe-area-inset-b
   .sec-head .cube { width: 42px; height: 42px; }
   .edu { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 32px; align-items: start; }
   .timeline li { padding: 20px 22px; }
+  .affil img { height: 44px; }
+  .seal { width: 58px; height: 58px; }
+  .seal img { width: 44px; height: 44px; }
   .card { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .card .pic { border-bottom: 0; border-right: 2px solid var(--ink); }
   .card .pic img { height: 100%; }
@@ -241,6 +253,7 @@ footer { margin-top: 64px; padding-block: 20px calc(28px + env(safe-area-inset-b
       <h1>Dongui Lee</h1>
       <p class="position">Ph.D. Student in Health Policy and Management</p>
       <p class="school">Graduate School of Public Health, Seoul National University</p>
+      <div class="affil"><picture><source srcset="assets/gsph-en-white.svg" media="(prefers-color-scheme: dark)"><img src="assets/gsph-en.svg" width="443" height="99" alt="SNU Health, Graduate School of Public Health, Seoul National University"></picture></div>
     </div>
 
     <div class="frame contact">
@@ -282,12 +295,14 @@ footer { margin-top: 64px; padding-block: 20px calc(28px + env(safe-area-inset-b
         <div class="frame plate"><img src="assets/degrees.svg" width="820" height="680" alt="Three isometric blocks rising like stairs: Bachelor's 2019–24, MPH 2024–26, Ph.D. 2026–."></div>
         <ol class="timeline" reversed>
           <li class="frame">
+            <span class="seal"><img src="assets/snu-emblem.svg" width="74" height="76" alt="Seoul National University emblem"></span>
             <div class="date">Mar 2026 – Present</div>
             <h3>Ph.D. Student, Health Policy and Management</h3>
             <p class="org">Seoul National University</p>
             <p class="meta">Advisor: Prof. Soonman Kwon</p>
           </li>
           <li class="frame">
+            <span class="seal"><img src="assets/snu-emblem.svg" width="74" height="76" alt="Seoul National University emblem"></span>
             <div class="date">Mar 2024 – Feb 2026</div>
             <h3>Master of Public Health (MPH), Health Policy and Management</h3>
             <p class="org">Seoul National University</p>
@@ -298,6 +313,7 @@ footer { margin-top: 64px; padding-block: 20px calc(28px + env(safe-area-inset-b
             </div>
           </li>
           <li class="frame">
+            <span class="seal"><img src="assets/yonsei-symbol.svg" width="100" height="100" alt="Yonsei University symbol"></span>
             <div class="date">Mar 2019 – Feb 2024</div>
             <!-- TBC: confirm degree type -->
             <h3>Bachelor’s degree, Child and Family Studies<span class="tbc" title="Confirm the degree type">TBC</span></h3>
@@ -379,9 +395,12 @@ footer { margin-top: 64px; padding-block: 20px calc(28px + env(safe-area-inset-b
     </section>
   </main>
 
-  <footer class="mono">
-    <span>Dongui Lee · Curriculum Vitae</span>
-    <span>Last updated October 2026</span>
+  <footer>
+    <div class="affils"><picture><source srcset="assets/snu-en-white.svg" media="(prefers-color-scheme: dark)"><img src="assets/snu-en.svg" width="205" height="77" alt="Seoul National University"></picture></div>
+    <div class="foot-row mono">
+      <span>Dongui Lee · Curriculum Vitae</span>
+      <span>Last updated October 2026</span>
+    </div>
   </footer>
 </div>
 
