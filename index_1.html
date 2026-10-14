@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dongui Lee · CV</title>
+<meta name="description" content="Dongui Lee — Ph.D. student in Health Care Management and Policy, Graduate School of Public Health, Seoul National University. Health insurance, health care utilization, and digital health.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://brionyy.github.io/">
+<meta property="og:title" content="Dongui Lee · Curriculum Vitae">
+<meta property="og:description" content="Ph.D. Student in Health Care Management and Policy, Graduate School of Public Health, Seoul National University">
+<meta property="og:image" content="https://brionyy.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F2EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C232B" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap">
+<!--CSS-START-->
+<style>
+/* Layout (mobile first): an isometric "model desk". Name and contact first, then the framed research scene,
+   then colour-coded sections (cube markers) whose cards pair an illustration plate with its text. */
+:root {
+  --paper: #F5F2EC;
+  --surface: #FFFFFF;
+  --ink: #2E3A46;
+  --mute: #5B6774;
+  --line: rgba(46, 58, 70, .14);
+  --dot: rgba(46, 58, 70, .10);
+  --sage: #9DB8A3;
+  --sand: #DCCBAA;
+  --slate: #9FB3C8;
+  --clay: #D4A089;
+  --gold: #E3C27A;
+  --on-pastel: #2E3A46;
+  --accent: #C0563A;
+  --tbc: #A85A0C;
+  --tbc-bg: rgba(180, 97, 14, .12);
+  --shadow: #2E3A46;
+  --header: rgba(245, 242, 236, .88);
+
+  --display: 'Space Grotesk', 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
+  --body: 'Manrope', 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --gutter: 18px;
+  --r: 16px;
+  --sh: 4px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1A2129; --surface: #232C36; --ink: #E7ECF1; --mute: #A7B2BE; --line: rgba(231, 236, 241, .14);
+    --dot: rgba(231, 236, 241, .07); --accent: #EE9478; --tbc: #F2AE66; --tbc-bg: rgba(242, 174, 102, .14);
+    --shadow: #0B0F13; --header: rgba(26, 33, 41, .86);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1A2129; --surface: #232C36; --ink: #E7ECF1; --mute: #A7B2BE; --line: rgba(231, 236, 241, .14);
+  --dot: rgba(231, 236, 241, .07); --accent: #EE9478; --tbc: #F2AE66; --tbc-bg: rgba(242, 174, 102, .14);
+  --shadow: #0B0F13; --header: rgba(26, 33, 41, .86);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 76px; }
+body {
+  margin: 0; background-color: var(--paper); color: var(--ink);
+  font-family: var(--body); font-size: 16px; line-height: 1.62; font-weight: 500;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  background-image: radial-gradient(var(--dot) 1px, transparent 1.15px); background-size: 24px 24px;
+}
+a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: .22em; text-decoration-thickness: 1.5px; }
+:focus-visible { outline: 2.5px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+[lang="ko"] { font-family: 'Noto Sans KR', var(--body); word-break: keep-all; letter-spacing: -.015em; }
+img { max-width: 100%; height: auto; display: block; }
+p { margin: 0; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: var(--gutter); }
+.mono { font-family: var(--mono); font-weight: 500; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; }
+.frame { background: var(--surface); border: 2px solid var(--ink); border-radius: var(--r);
+  box-shadow: var(--sh) var(--sh) 0 var(--shadow); overflow: hidden; }
+.tbc { display: inline-block; vertical-align: .12em; margin-left: .4em; font-family: var(--mono); font-weight: 500; font-style: normal;
+  font-size: .6rem; letter-spacing: .08em; line-height: 1.5; color: var(--tbc); background: var(--tbc-bg);
+  padding: .1em .5em; border-radius: 4px; white-space: nowrap; }
+.cube { flex: none; color: var(--ink); }
+
+/* ---------- sticky header ---------- */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--header);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 58px; }
+.brand { display: flex; align-items: center; gap: 9px; font-family: var(--display); font-weight: 700; font-size: 1.02rem; letter-spacing: -.01em; text-decoration: none; }
+.brand .cube { width: 28px; height: 28px; }
+.top nav { display: none; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .45em; min-height: 44px; padding: 0 1.1em;
+  border-radius: 999px; border: 2px solid var(--ink); font: 700 .92rem/1 var(--body); text-decoration: none; cursor: pointer;
+  background: var(--surface); color: var(--ink); -webkit-tap-highlight-color: transparent; }
+.btn.primary { background: var(--ink); color: var(--paper); }
+.btn.small { min-height: 38px; padding: 0 .95em; font-size: .85rem; }
+.btn svg { width: 1.05em; height: 1.05em; }
+.btn:active { transform: translate(1px, 1px); }
+
+/* ---------- hero ---------- */
+.hero { padding-top: 28px; display: grid; gap: 22px; }
+.kicker { color: var(--mute); }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2.75rem, 12.5vw, 4.6rem); line-height: .95; letter-spacing: -.035em; margin: 10px 0 0; }
+.position { font-weight: 700; font-size: 1.08rem; line-height: 1.38; margin-top: 14px; text-wrap: balance; }
+.school { color: var(--mute); font-size: .98rem; line-height: 1.45; margin-top: 4px; }
+.contact { display: grid; gap: 14px; padding: 16px; }
+.contact .addr { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.contact .addr a { font-weight: 700; font-size: 1.05rem; overflow-wrap: anywhere; text-decoration: none; }
+.contact .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.contact .actions .btn { flex: 1 1 auto; }
+.contact .adv { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; padding-top: 12px; border-top: 1px solid var(--line); }
+.contact .adv span:last-child { font-weight: 700; text-align: right; }
+.label { color: var(--mute); }
+
+.cover { margin: 0; }
+.cover img { width: 100%; }
+
+.interests { padding: 18px 18px 20px; background: var(--sand); color: var(--on-pastel); border-top: 2px solid var(--ink); }
+.interests .mono { opacity: .72; }
+.interests p { font-family: var(--display); font-weight: 500; font-size: 1.36rem; line-height: 1.22; letter-spacing: -.02em; margin-top: 8px; text-wrap: balance; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.chip { display: inline-flex; align-items: center; gap: .5em; padding: .45em .85em; border: 1.5px solid var(--on-pastel); border-radius: 999px;
+  font-weight: 700; font-size: .86rem; line-height: 1.2; color: var(--on-pastel); background: #FFFFFF; }
+.chip i { width: .72em; height: .72em; border-radius: 3px; border: 1.5px solid var(--on-pastel); display: inline-block; flex: none; }
+
+.jump { display: flex; gap: 8px; overflow-x: auto; margin-inline: calc(-1 * var(--gutter)); padding: 4px var(--gutter) 8px;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.jump::-webkit-scrollbar { display: none; }
+.jump a { flex: none; display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 0 14px 0 10px; border: 1.5px solid var(--ink);
+  border-radius: 999px; text-decoration: none; font-weight: 700; font-size: .88rem; background: var(--surface); }
+.jump .cube { width: 20px; height: 20px; }
+
+/* ---------- sections ---------- */
+section.sec { margin-top: 56px; }
+.sec-head { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.sec-head .cube { width: 36px; height: 36px; }
+.sec-head h2 { font-family: var(--display); font-weight: 700; font-size: 1.6rem; line-height: 1.1; letter-spacing: -.025em; margin: 0; }
+.sec-head .mono { color: var(--mute); margin-left: auto; white-space: nowrap; }
+
+.date { font-family: var(--mono); font-weight: 500; font-size: .76rem; letter-spacing: .04em; color: var(--mute); font-variant-numeric: tabular-nums; }
+h3 { font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-height: 1.32; letter-spacing: -.012em; margin: 6px 0 4px; text-wrap: balance; }
+.org { font-weight: 600; line-height: 1.5; }
+.meta { color: var(--mute); font-size: .9rem; line-height: 1.5; margin-top: 4px; }
+
+.edu { display: grid; gap: 16px; }
+.plate { background: #F5F2EC; }
+.plate img { width: 100%; max-width: 300px; margin-inline: auto; }
+@media (min-width: 720px) { .plate img { max-width: 420px; } }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.timeline li { padding: 16px; }
+.thesis { margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: var(--paper); border: 1.5px dashed var(--line); }
+.thesis .mono { color: var(--mute); font-size: .64rem; }
+.thesis p { margin-top: 4px; font-style: italic; font-size: .95rem; line-height: 1.55; }
+
+.cards { display: grid; gap: 18px; }
+.card { display: grid; }
+.card .pic { border-bottom: 2px solid var(--ink); min-width: 0; }
+.card .pic img { width: 100%; aspect-ratio: 1140 / 500; object-fit: cover; }
+.card .body { padding: 16px; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+
+.badge { display: inline-block; align-self: flex-start; font-family: var(--mono); font-weight: 500; font-size: .64rem; letter-spacing: .12em; text-transform: uppercase;
+  background: var(--clay); color: var(--on-pastel); border: 1.5px solid var(--on-pastel); border-radius: 999px; padding: .3em .75em; }
+.cite { margin-top: 10px; font-size: .97rem; line-height: 1.7; }
+.cite b { font-weight: 700; }
+.me { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: .25em; }
+
+.skills { display: grid; gap: 16px; align-items: start; }
+.skills .frame { padding: 16px; }
+.skills h3 { margin-top: 0; }
+.skills .chips { margin-top: 10px; }
+.skills .chip { background: var(--slate); }
+.certs { list-style: none; margin: 6px 0 0; padding: 0; }
+.certs li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: baseline; padding-block: .65em; border-top: 1px solid var(--line); line-height: 1.45; }
+.certs li:first-child { border-top: 0; }
+.certs .date { white-space: nowrap; }
+
+footer { margin-top: 64px; padding-block: 24px calc(28px + env(safe-area-inset-bottom, 0px)); border-top: 2px solid var(--ink); }
+.affils { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.affils img { height: 46px; width: auto; }
+.foot-row { margin-top: 18px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 20px; color: var(--mute); }
+
+/* official marks: kept in their own colours on white, or the white version on dark (SNU UI rules) */
+.affil { margin-top: 18px; }
+.affil img { height: 38px; width: auto; }
+.seal { float: right; width: 52px; height: 52px; margin: 0 0 6px 12px; border-radius: 12px; background: #FFFFFF;
+  border: 1.5px solid var(--line); display: grid; place-items: center; }
+.seal img { width: 40px; height: 40px; object-fit: contain; }
+
+/* ---------- larger screens ---------- */
+@media (min-width: 720px) {
+  :root { --gutter: 32px; --r: 18px; --sh: 5px; }
+  body { font-size: 17px; background-size: 26px 26px; }
+  .top nav { display: flex; gap: 4px; }
+  .top nav a { text-decoration: none; font-weight: 600; font-size: .92rem; padding: .5em .8em; border-radius: 999px; border: 1.5px solid transparent; }
+  .top nav a:hover { border-color: var(--ink); }
+  .top .btn { display: none; }
+  .jump { display: none; }
+  .hero { padding-top: 44px; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: end; gap: 28px 40px; }
+  .hero .cover { grid-column: 1 / -1; }
+  .interests { padding: 24px 30px 28px; }
+  .interests p { font-size: 1.9rem; max-width: 30ch; }
+  section.sec { margin-top: 88px; }
+  .sec-head h2 { font-size: 2.1rem; }
+  .sec-head .cube { width: 42px; height: 42px; }
+  .edu { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 32px; align-items: start; }
+  .timeline li { padding: 20px 22px; }
+  .affil img { height: 44px; }
+  .seal { width: 58px; height: 58px; }
+  .seal img { width: 44px; height: 44px; }
+  .card { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .card .pic { border-bottom: 0; border-right: 2px solid var(--ink); }
+  .card .pic img { height: 100%; }
+  .card .body { padding: 24px 28px; }
+  .skills { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: 24px; }
+  .skills .frame { padding: 22px 24px; }
+}
+@media (hover: hover) { a:hover { color: var(--accent); } .btn:hover { color: inherit; } .btn.primary:hover { color: var(--paper); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  body { background: #fff; color: #000; }
+  .top, .jump, .contact .actions { display: none; }
+  .frame { box-shadow: none; }
+}
+</style>
+<!--CSS-END-->
+</head>
+<body>
+<!--BODY-START-->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#9DB8A3" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#7D9382" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#B8CBBC" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg><span>Dongui Lee</span></a>
+    <nav aria-label="Sections">
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Skills</a>
+    </nav>
+    <a class="btn small" href="mailto:dongui007@snu.ac.kr">Email</a>
+  </div>
+</header>
+
+<div class="wrap" id="main">
+  <div class="hero">
+    <div>
+      <p class="kicker mono">Curriculum Vitae · Autumn 2026</p>
+      <h1>Dongui Lee</h1>
+      <p class="position">Ph.D. Student in Health Care Management and Policy</p>
+      <p class="school">Graduate School of Public Health, Seoul National University</p>
+      <div class="affil"><picture><source srcset="assets/gsph-en-white.svg" media="(prefers-color-scheme: dark)"><img src="assets/gsph-en.svg" width="443" height="99" alt="SNU Health, Graduate School of Public Health, Seoul National University"></picture></div>
+    </div>
+
+    <div class="frame contact">
+      <div class="addr">
+        <span class="mono label">Email</span>
+        <a id="email" href="mailto:dongui007@snu.ac.kr">dongui007@snu.ac.kr</a>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="mailto:dongui007@snu.ac.kr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Send email</a>
+        <button class="btn" id="copy-email" type="button" data-copy="dongui007@snu.ac.kr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
+      </div>
+      <div class="adv"><span class="mono label">Advisor</span><span>Prof. Soonman Kwon</span></div>
+    </div>
+
+    <figure class="frame cover">
+      <picture>
+        <source media="(max-width: 719px)" srcset="assets/cover-m.svg">
+        <img src="assets/cover.svg" width="1500" height="560" alt="Isometric illustration of three research interests: a clinic for health care utilization, coins and an insurance card for health insurance, and a smartphone with a heart-rate line for digital health.">
+      </picture>
+      <figcaption class="interests">
+        <div class="mono">Research interests</div>
+        <p>Research on health insurance, health care utilization, and digital health.</p>
+      </figcaption>
+    </figure>
+
+    <nav class="jump" aria-label="Jump to section">
+      <a href="#education"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#DCCBAA" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#B0A288" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#E5D9C1" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg>Education</a>
+      <a href="#experience"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#9DB8A3" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#7D9382" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#B8CBBC" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg>Experience</a>
+      <a href="#publications"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#D4A089" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#A9806D" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#E0BAAA" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg>Publications</a>
+      <a href="#skills"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#9FB3C8" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#7F8FA0" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#B9C8D7" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg>Skills</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- EDUCATION -->
+    <section class="sec" id="education" aria-labelledby="h-edu">
+      <div class="sec-head"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#DCCBAA" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#B0A288" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#E5D9C1" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg><h2 id="h-edu">Education</h2><span class="mono">3 degrees</span></div>
+      <div class="edu">
+        <div class="frame plate"><img src="assets/degrees.svg" width="820" height="680" alt="Three isometric blocks rising like stairs: Bachelor's 2019–24, MPH 2024–26, Ph.D. 2026–."></div>
+        <ol class="timeline" reversed>
+          <li class="frame">
+            <span class="seal"><img src="assets/snu-emblem.svg" width="74" height="76" alt="Seoul National University emblem"></span>
+            <div class="date">Mar 2026 – Present</div>
+            <h3>Ph.D. Student, Health Care Management and Policy</h3>
+            <p class="org">Seoul National University</p>
+            <p class="meta">Advisor: Prof. Soonman Kwon</p>
+          </li>
+          <li class="frame">
+            <span class="seal"><img src="assets/snu-emblem.svg" width="74" height="76" alt="Seoul National University emblem"></span>
+            <div class="date">Mar 2024 – Feb 2026</div>
+            <h3>Master of Public Health (MPH), Health Care Management and Policy</h3>
+            <p class="org">Seoul National University</p>
+            <div class="thesis">
+              <div class="mono">Master’s thesis</div>
+              <!-- TBC: confirm "Use on" vs "Use of" -->
+              <p>“Factors Associated with the Use on Over-the-Counter Drugs for Self-Treatment among Older Adults Living Alone in South Korea”<span class="tbc" title="Confirm the exact thesis title">TBC</span></p>
+            </div>
+          </li>
+          <li class="frame">
+            <span class="seal"><img src="assets/yonsei-symbol.svg" width="100" height="100" alt="Yonsei University symbol"></span>
+            <div class="date">Mar 2019 – Feb 2024</div>
+            <!-- TBC: confirm degree type -->
+            <h3>Bachelor’s degree, Child and Family Studies<span class="tbc" title="Confirm the degree type">TBC</span></h3>
+            <p class="org">Yonsei University</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="sec" id="experience" aria-labelledby="h-exp">
+      <div class="sec-head"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#9DB8A3" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#7D9382" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#B8CBBC" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg><h2 id="h-exp">Experience</h2><span class="mono">3 roles</span></div>
+      <div class="cards">
+        <article class="frame card">
+          <div class="pic"><img src="assets/exp1.svg" width="1140" height="500" loading="lazy" alt="Isometric coins and rising bars on a platform, representing health financing."></div>
+          <div class="body">
+            <div class="date">Jan 2026 – Present</div>
+            <!-- TBC: confirm the official title -->
+            <h3>Program Coordinator<span class="tbc" title="Confirm the official title">TBC</span></h3>
+            <p class="org">Dr LEE Jong-wook Fellowship Program, Training Course for Health Financing and Economics</p>
+            <p class="meta">Korea Foundation for International Healthcare (KOFIH) · Seoul National University</p>
+          </div>
+        </article>
+        <article class="frame card">
+          <div class="pic"><img src="assets/exp2.svg" width="1140" height="500" loading="lazy" alt="Isometric stack of papers with a bar chart, a tall block and a cylinder, representing research assistance."></div>
+          <div class="body">
+            <!-- TBC: confirm start date -->
+            <div class="date">Fall 2026<span class="tbc" title="Confirm the start date">TBC</span></div>
+            <h3>Research Assistant to Prof. Soonman Kwon</h3>
+            <p class="org">Graduate School of Public Health, Seoul National University</p>
+          </div>
+        </article>
+        <article class="frame card">
+          <div class="pic"><img src="assets/exp3.svg" width="1140" height="500" loading="lazy" alt="Isometric smartphone linked by dotted lines to a clinic and a stack of data blocks, representing digital health."></div>
+          <div class="body">
+            <div class="date">Oct 2024 – May 2025</div>
+            <h3>Research Assistant</h3>
+            <!-- TBC: add the official English project title -->
+            <p class="org"><span lang="ko">보건의료분야 디지털 헬스 전략 이행방안 수립 연구</span><span class="tbc" title="Add the official English title">English title TBC</span></p>
+            <p class="meta">Korea Foundation for International Healthcare (KOFIH)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="sec" id="publications" aria-labelledby="h-pub">
+      <div class="sec-head"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#D4A089" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#A9806D" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#E0BAAA" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg><h2 id="h-pub">Publications</h2><span class="mono">1 forthcoming</span></div>
+      <article class="frame card">
+        <div class="pic"><img src="assets/pub1.svg" width="1140" height="500" loading="lazy" alt="Three stacked isometric planes with markers, representing a multi-level analytical framework."></div>
+        <div class="body">
+          <span class="badge">Forthcoming</span>
+          <p class="cite">Jeon B, Park N, Yoon N-H, <span class="me">Lee D</span>, Kwon S. <b>Development of a Multilevel Digital Health Readiness Framework for Official Development Assistance Projects in the Health Sector</b>. <span lang="ko">『보건경제와 정책연구』</span>.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="sec" id="skills" aria-labelledby="h-skills">
+      <div class="sec-head"><svg class="cube" viewBox="0 0 64 64" aria-hidden="true"><polygon points="8.3,45.6 32.0,59.3 32.0,31.9 8.3,18.2" fill="#9FB3C8" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="55.7,45.6 32.0,59.3 32.0,31.9 55.7,18.2" fill="#7F8FA0" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><polygon points="32.0,4.6 55.7,18.2 32.0,31.9 8.3,18.2" fill="#B9C8D7" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></svg><h2 id="h-skills">Skills</h2><span class="mono">Methods · Certificates</span></div>
+      <div class="skills">
+        <div class="frame">
+          <h3>Methods</h3>
+          <ul class="chips">
+            <li class="chip">R</li>
+            <li class="chip">Causal inference</li>
+            <li class="chip">Panel data analysis</li>
+          </ul>
+        </div>
+        <div class="frame">
+          <h3>Certificates</h3>
+          <ul class="certs">
+            <li><span>ADsP (Advanced Data Analytics Semi-Professional)</span><span class="date">Sep 2021</span></li>
+            <li><span>Computer Specialist in Spreadsheet &amp; Database, Level 1</span><span class="date">Apr 2021</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="affils"><picture><source srcset="assets/snu-en-white.svg" media="(prefers-color-scheme: dark)"><img src="assets/snu-en.svg" width="205" height="77" alt="Seoul National University"></picture></div>
+    <div class="foot-row mono">
+      <span>Dongui Lee · Curriculum Vitae</span>
+      <span>Last updated October 2026</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy-email');
+    if (!btn) return;
+    var label = btn.querySelector('span');
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var reset = function () { setTimeout(function () { label.textContent = 'Copy'; }, 1600); };
+      var fallback = function () {
+        var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        label.textContent = 'Selected'; reset();
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { label.textContent = 'Copied'; reset(); }, fallback);
+      } else { fallback(); }
+    });
+  })();
+</script>
+<!--BODY-END-->
+</body>
+</html>
